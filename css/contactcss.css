@@ -10,6 +10,7 @@ body{
 header h1{
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
+  color: #FFF;
   text-align: center;
   text-shadow: #003E66 2px 5px;
 }
