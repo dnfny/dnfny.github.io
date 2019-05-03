@@ -78,7 +78,7 @@ header a:active {
   font-size: 40px;
   text-decoration: none;
 }
-main div div{
+.indexgrid div{
   background: #fff;
   transition: background 1s ease-in;
   padding-top: 125px;
@@ -88,7 +88,7 @@ main div div{
   text-shadow: #003E66 2px 5px;
 
 }
-main div div:hover {
+.indexgrid div:hover {
   background: #003E66;
   transition: background 1s ease-in;
   padding-top: 125px;
