@@ -42,6 +42,9 @@ header a:hover {
 header a:active {
   color: black;
 }
+header a:visited {
+  text-decoration: none;
+}
 #A1,
 #A2,
 #A3,
@@ -68,18 +71,28 @@ header a:active {
 }
 
 
-.grid {
+.contactgrid {
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-gap: 5px;
-  grid-template-rows: 100px;
+
+  margin-left: 5px;
+  padding-left: 10px;
+
 }
 
-main div div{
+  .contactgrid div{
 
   background: #FFF;
   border-color: #003E66;
   border-style: solid;
   border-radius: 10px;
+  padding-left: 5px;
 
+}
+div img {
+  border-color: white;
+  border-width: thick;
+  border-style: solid;
+  border-radius: 10px;
 }
