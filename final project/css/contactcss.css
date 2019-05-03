@@ -42,6 +42,9 @@ header a:hover {
 header a:active {
   color: black;
 }
+header a:visited {
+  text-decoration: none;
+}
 #A1,
 #A2,
 #A3,
@@ -73,6 +76,8 @@ header a:active {
   grid-template-columns: 1fr 1fr ;
   grid-gap: 5px;
   grid-template-rows: 400px;
+  margin-left: 5px;
+  padding-left: 10px;
 
 }
 
@@ -84,4 +89,9 @@ header a:active {
   border-radius: 10px;
   text-align: center;
 
+}
+img {
+  border-color: white;
+  border-width: medium;
+  border-style: solid;
 }
