@@ -72,7 +72,7 @@ header a:active {
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-gap: 5px;
-  grid-template-rows: 200px;
+  grid-template-rows: 400px;
 
 }
 

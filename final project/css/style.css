@@ -13,6 +13,12 @@ h1{
   text-align: center;
   text-shadow: #003E66 2px 5px;
 }
+body h2{
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 30px;
+  text-shadow: #003E66 2px 5px;
+  color: #FFF;
+}
 p{
   font-family: 'Abel', sans-serif;
 }
@@ -100,7 +106,7 @@ header a:active {
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-gap: 5px;
-  grid-template-rows: 200px;
+  grid-template-rows: 300px;
 }
 .contactgrid div{
   background: #000;
