@@ -47,6 +47,9 @@ header a.icon {
   float: right;
   margin-right: 3px;
 }
+#mobileLinks {
+  display: block;
+}
 
 body {
   align-items: center;
