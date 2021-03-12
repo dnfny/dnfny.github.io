@@ -3,19 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>dana feeney</title>
-    <link href="css/style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Abel|Luckiest+Guy|Yrsa" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <header>
-        <a href="#default" class="logo">dana feeney</a>
+        <a href="index.html" class="logo">dana feeney</a>
         <div class="header-right">
+            
+            <div id="mobileLinks">
             <a class = "active" href="index.html">home</a>
             <a href="education.html">education</a>
             <a href="experience.html">experience</a>
-            <a href="portfolio.html">past projects</a>
+            <a href="portfolio.html">projects</a>
             <a href="contact.html">contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
        
 
@@ -23,6 +29,18 @@
     <main>
      
     </main>
+    <script type="text/javascript">
+      // var stylesheet = document.styleSheets[0];
+      function myFunction() {
+        var x = document.getElementById('mobileLinks');
+        if (x.style.display === "grid") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "grid";
+
+        }
+      }
+      </script>
   </body>
   
 </html>
