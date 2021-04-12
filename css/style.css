@@ -51,11 +51,32 @@ header a.icon {
   display: block;
 }
 
-body {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  align-content: center;
 }
+
+.myDIV {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 10px 10px 10px 10px 10px;
+  width: 100%;
+  color: pink;
+  font-size: 50px;
+}
+#name1,
+#name2,
+#name3,
+#name4,
+#name5 {
+  padding: 0px;
+  opacity: 100%;
+}
+#stretch {
+  transition: padding 3s, opacity 2s;
+}
+
 @media screen and (max-width: 675px) {
   header {
     margin-top: 0;
