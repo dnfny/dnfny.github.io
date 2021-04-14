@@ -63,13 +63,15 @@ main {
 }
 @keyframes bounce {
   from {
-    opacity: 10%;
-    letter-spacing: 40px;
+    letter-spacing: normal;
+  }
+
+  50% {
+    letter-spacing: 50px;
   }
 
   to {
-    opacity: 100%;
-    letter-spacing: 1px;
+    letter-spacing: normal;
   }
 }
 
