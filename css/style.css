@@ -54,8 +54,6 @@ main {
 }
 
 .name {
-  animation-duration: 3s;
-  animation-name: bounce;
   /* animation-fill-mode: forwards; */
   z-index: 1;
 
@@ -63,10 +61,7 @@ main {
   /* float: left; */
   text-decoration: none;
   letter-spacing: normal;
-}
-.name:hover {
-  animation-duration: 3s;
-  animation-name: bounce;
+  padding-left: 20px;
 }
 
 #landing {
