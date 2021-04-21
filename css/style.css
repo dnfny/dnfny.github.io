@@ -67,8 +67,33 @@ main {
   animation-name: bounce;
 }
 
-#landing{
-  
+#landing {
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  height: 1000px;
+  padding: 0;
+  background-color: lightsalmon;
+  animation: fadeout;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  text-align: center;
+}
+#landing h2 {
+  margin: 0 auto;
+  color: white;
+  font-size: 100px;
+  padding-top: 50px;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+    height: 0px;
+  }
 }
 
 @keyframes bounce {
