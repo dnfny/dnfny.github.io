@@ -3,7 +3,7 @@
   margin: 0;
   font-family: "Lato", sans-serif;
 }
-header {
+/* header {
   position: sticky;
   margin: 0 auto;
   top: 0;
@@ -11,11 +11,11 @@ header {
   grid-template-columns: 7fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0.5rem;
   width: 100%;
-  /* margin-top: 20px;
-  max-width: 90%; */
+   margin-top: 20px;
+  max-width: 90%; 
   background-color: lightsalmon;
-}
-header a {
+} */
+/* header a {
   color: white;
   padding: 12px;
   text-align: left;
@@ -24,7 +24,7 @@ header a {
   line-height: 25px;
   border-radius: 4px;
   transition: letter-spacing 1s;
-}
+} */
 
 /* header a.logo {
   font-size: 25px;
@@ -32,7 +32,7 @@ header a {
   margin-left: 3px;
 } */
 
-header a:hover {
+/* header a:hover {
   letter-spacing: 10px;
 }
 
@@ -40,28 +40,73 @@ header a.active {
   /* text-decoration: underline;
   text-decoration-color: lightsalmon;
   text-decoration-style: dotted;
-  text-decoration-thickness: 3.5px; */
+  text-decoration-thickness: 3.5px; 
   font-weight: bolder;
 }
 header a.icon {
   display: none;
+} */
+.sidenav {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  animation: shrink;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: lightsalmon;
+
+  padding-top: 400px;
 }
 
-main {
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: bisque;
+  display: block;
+  animation: fadein;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav a.active {
+  color: #f1f1f1;
+}
+
+.content {
   margin: 0 auto;
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
   max-width: 800px;
   align-content: center;
 }
 
+/* @media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+} */
+
 .name {
   /* animation-fill-mode: forwards; */
-  z-index: 1;
-
   opacity: 100%;
   /* float: left; */
   text-decoration: none;
   letter-spacing: normal;
   padding-left: 20px;
+}
+.sidenav a.icon {
+  display: none;
 }
 
 #landing {
@@ -87,13 +132,21 @@ main {
   margin-top: 100px;
 }
 
-@keyframes fadeout {
+@keyframes shrink {
   from {
-    opacity: 100%;
+    width: 100%;
   }
   to {
+    width: 160px;
+  }
+}
+@keyframes fadein {
+  from {
     opacity: 0;
-    height: 0px;
+  }
+
+  to {
+    opacity: 100%;
   }
 }
 
@@ -120,39 +173,40 @@ main {
 }
 
 @media screen and (max-width: 675px) {
-  header {
+  .sidenav {
+    animation: none;
     margin-top: 0;
-    overflow: hidden;
-    background-color: #333;
+    padding-top: 0;
+    overflow-y: visible;
+    background-color: lightsalmon;
     position: relative;
-    height: 25%;
+    height: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
   }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
-  #mobileLinks {
+  .sidenav #mobileLinks {
     display: none;
-    padding: 0;
+    animation: none;
     grid-template-columns: 1fr;
   }
 
   /* Style navigation menu links */
-  header a {
+  .sidenav a {
+    animation: none;
     display: block;
-    color: white;
-
     text-decoration: none;
     font-size: 17px;
     display: block;
-    color: black;
     border-style: none;
     line-height: 20px;
   }
 
   /* Style the hamburger menu */
-  header a.icon {
-    background: black;
+  .sidenav a.icon {
+    background: white;
     display: block;
     position: absolute;
     right: 0;
@@ -160,14 +214,12 @@ main {
   }
 
   /* Add a grey background color on mouse-over */
-  header a:hover {
-    background-color: #ddd;
-    color: black;
+  .sidenav a:hover {
+    color: white;
   }
 
   /* Style the active link (or home/logo) */
-  header a.active {
-    background-color: #4caf50;
+  .sidenav a.active {
     color: white;
   }
 }

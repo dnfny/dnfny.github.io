@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
+    
   </head>
 
   <body>
@@ -15,32 +16,51 @@
           alert("Sorry for the mess currently working on reconstructing my site");
       }); 
   </script> -->
-    <div id = "landing">
-     <h2>hi i'm dana</h2>
-    </div>
-    <header>
+    
+    <!-- <header>
       
-        <a href="index.html" class="name">dnfny</a>
-        <a class = "active" href="index.html">home</a>
-        <a href="education.html">education</a>
-        <a href="experience.html">experience</a>
-        <a href="portfolio.html">projects</a>
-        <a href="contact.html">contact</a>
+        
 
-    </header>
+    </header> -->
     <main>
+      <div class="sidenav">
+        
+        <a class = "name active logo" href="index.html">dana feeney</a>
+        <div id="mobileLinks">
+        <a href="#education">education</a>
+        <a href="#experience">experience</a>
+        <a href="#portfolio">projects</a>
+        <a href="#contact">contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class = "content">
+      <div id = "landing">
+        <h2>hi i'm dana</h2>
+       </div>
       
       <div class = "block">
-        <h2>
-          hi i'm dana.
-        </h2>
         <p>
           i grew up outside of philadelphia and i go to school at the university of miami. i study computer science with minors in interactive media, film, and journalism.
-          as of may 2021, i'm about to graduate college and recently got vaccinated. i am currently preparing to find career opportunities post grad and trying to take the end of this semester as slow as i can.
+          as of may 2021, i'm about to graduate college and recently got vaccinated. i'm just trying to take the end of this semester as slow as i can.
         </p>
       </div>
+      <div class = "block">
+        <p id = "education">education</p>
+      </div>
+      <div class = "block">
+        <p id = "experience">experience</p>
+      </div>
+      <div class = "block">
+        <p id = "projects">projects</p>
+      </div>
+      <div class = "block">
+        <p id = " contact">contact</p>
+      </div>
       
-
+      </div>
 
 
     </main>
