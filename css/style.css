@@ -46,6 +46,9 @@ html {
   animation: fadein;
   grid-template-columns: 1fr;
 }
+body {
+  background-color: linen;
+}
 .content {
   margin: 0 auto;
   margin-left: 200px; /* Same as the width of the sidenav */
@@ -53,6 +56,8 @@ html {
   padding: 0px 10px;
   max-width: 800px;
   align-content: center;
+  color: salmon;
+  text-shadow: bisque 1px 2px;
 }
 .name {
   /* animation-fill-mode: forwards; */
@@ -65,35 +70,24 @@ html {
 .sidenav a.icon {
   display: none;
 }
-
-/* #landing {
-  z-index: 2;
-  width: 100%;
-  margin: 0;
-  height: 1000px;
-  padding: 0;
-  background-color: lightsalmon;
-  animation: fadeout;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-  text-align: center;
-}
-#landing h2 {
-  margin: 0 auto;
-  color: white;
-  font-size: 100px;
-  padding-top: 50px;
-} */
-
 .block {
+  padding-top: 100px;
+}
+/* .block {
   display: none;
 }
 .block.active {
   display: block;
-}
+} */
 .scroll {
   margin: 0 auto;
+  align-self: center;
   color: lightsalmon;
+}
+.scroll:hover {
+  margin: 0 auto;
+  align-self: center;
+  color: salmon;
 }
 
 @keyframes shrink {
@@ -147,26 +141,26 @@ html {
     position: sticky;
     height: auto;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+
+    margin: 0 auto;
   }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
   .sidenav #mobileLinks {
     display: none;
     animation: none;
+
     grid-template-columns: 1fr;
   }
 
   /* Style navigation menu links */
   .sidenav a {
     animation: none;
-    display: block;
     text-decoration: none;
     font-size: 17px;
-    display: block;
     border-style: none;
-    line-height: 20px;
+
+    padding-bottom: 5px;
   }
 
   /* Style the hamburger menu */
@@ -177,14 +171,16 @@ html {
     right: 0;
     top: 0;
   }
-
-  /* Add a grey background color on mouse-over */
   .sidenav a:hover {
     color: white;
   }
 
-  /* Style the active link (or home/logo) */
   .sidenav a.active {
     color: white;
+  }
+  .content {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 400px;
   }
 }

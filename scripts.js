@@ -19,20 +19,20 @@ function animate({duration, draw, timing}) {
 
   function myFunction() {
     var x = document.getElementById("mobileLinks");
-    if (x.style.display === "block") {
+    if (x.style.display === "grid") {
       x.style.display = "none";
     } else {
-      x.style.display = "block";
+      x.style.display = "grid";
     }
   }
   
 
-function scrolldown(){
+function scrollDown(){
 // Get the container element
-  var blockscontainer = document.getElementById("blocks");
+  var blocksContainer = document.getElementById("blocks");
   console.log("hi im in here");
   // Get all blocks inside the container
-  var blocks = blockscontainer.getElementsByClassName("block");
+  var blocks = blocksContainer.getElementsByClassName("block");
 
   // Loop through the buttons and add the active class to the current/clicked button
   for (var i = 0; i < blocks.length; i++) {
@@ -44,12 +44,12 @@ function scrolldown(){
   } 
 }
 
-function scrollup(){
+function scrollUp(){
   // Get the container element
-    var blocks = document.getElementById("blocks");
+    var blocksContainer = document.getElementById("blocks");
     console.log("hi im in here");
     // Get all blocks inside the container
-    var blocks = blocks.getElementsByClassName("block");
+    var blocks = blocksContainer.getElementsByClassName("block");
   
     // Loop through the buttons and add the active class to the current/clicked button
     for (var i = 0; i < blocks.length; i++) {
