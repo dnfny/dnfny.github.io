@@ -3,49 +3,6 @@
   margin: 0;
   font-family: "Lato", sans-serif;
 }
-/* header {
-  position: sticky;
-  margin: 0 auto;
-  top: 0;
-  display: grid;
-  grid-template-columns: 7fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0.5rem;
-  width: 100%;
-   margin-top: 20px;
-  max-width: 90%; 
-  background-color: lightsalmon;
-} */
-/* header a {
-  color: white;
-  padding: 12px;
-  text-align: left;
-  text-decoration: none;
-  font-size: 30px;
-  line-height: 25px;
-  border-radius: 4px;
-  transition: letter-spacing 1s;
-} */
-
-/* header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-  margin-left: 3px;
-} */
-
-/* header a:hover {
-  letter-spacing: 10px;
-}
-
-header a.active {
-  /* text-decoration: underline;
-  text-decoration-color: lightsalmon;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 3.5px; 
-  font-weight: bolder;
-}
-header a.icon {
-  display: none;
-} */
 .sidenav {
   height: 100%;
   width: 100%;
@@ -78,7 +35,11 @@ header a.icon {
 .sidenav a.active {
   color: #f1f1f1;
 }
-
+.sidenav #mobileLinks {
+  display: visible;
+  animation: fadein;
+  grid-template-columns: 1fr;
+}
 .content {
   margin: 0 auto;
   margin-left: 200px; /* Same as the width of the sidenav */
@@ -87,16 +48,6 @@ header a.icon {
   max-width: 800px;
   align-content: center;
 }
-
-/* @media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-} */
-
 .name {
   /* animation-fill-mode: forwards; */
   opacity: 100%;
@@ -129,7 +80,8 @@ header a.icon {
 }
 
 .block {
-  margin-top: 100px;
+  height: 500px;
+  padding-top: 50px;
 }
 
 @keyframes shrink {
@@ -175,11 +127,12 @@ header a.icon {
 @media screen and (max-width: 675px) {
   .sidenav {
     animation: none;
+    z-index: 1;
     margin-top: 0;
     padding-top: 0;
     overflow-y: visible;
     background-color: lightsalmon;
-    position: relative;
+    position: sticky;
     height: auto;
     width: 100%;
     display: grid;
