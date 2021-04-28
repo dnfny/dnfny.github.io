@@ -26,3 +26,37 @@ function animate({duration, draw, timing}) {
     }
   }
   
+
+function scrolldown(){
+// Get the container element
+  var blockscontainer = document.getElementById("blocks");
+  console.log("hi im in here");
+  // Get all blocks inside the container
+  var blocks = blockscontainer.getElementsByClassName("block");
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < blocks.length; i++) {
+    blocks[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  } 
+}
+
+function scrollup(){
+  // Get the container element
+    var blocks = document.getElementById("blocks");
+    console.log("hi im in here");
+    // Get all blocks inside the container
+    var blocks = blocks.getElementsByClassName("block");
+  
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < blocks.length; i++) {
+      blocks[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className -= " active";
+      });
+    } 
+  }

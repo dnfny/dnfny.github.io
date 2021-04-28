@@ -3,10 +3,14 @@
   margin: 0;
   font-family: "Lato", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .sidenav {
   height: 100%;
   width: 100%;
   position: fixed;
+
   animation: shrink;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -14,8 +18,10 @@
   top: 0;
   left: 0;
   background-color: lightsalmon;
-
-  padding-top: 400px;
+}
+.links {
+  position: relative;
+  top: 40%;
 }
 
 .sidenav a {
@@ -60,7 +66,7 @@
   display: none;
 }
 
-#landing {
+/* #landing {
   z-index: 2;
   width: 100%;
   margin: 0;
@@ -77,11 +83,17 @@
   color: white;
   font-size: 100px;
   padding-top: 50px;
-}
+} */
 
 .block {
-  height: 500px;
-  padding-top: 50px;
+  display: none;
+}
+.block.active {
+  display: block;
+}
+.scroll {
+  margin: 0 auto;
+  color: lightsalmon;
 }
 
 @keyframes shrink {
