@@ -25,6 +25,20 @@ function animate({duration, draw, timing}) {
       x.style.display = "grid";
     }
   }
+
+  function landingGo() {
+    var x = document.getElementById("landing");
+      x.style.display = "none";
+   
+    var y = document.getElementById("sidenav");
+      y.style.width = "180px";
+
+
+    var z = document.getElementById("links");
+      z.style.display = "block";
+    console.log("made it mama")
+   
+  }
   
 
 function scrollDown(){
