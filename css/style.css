@@ -34,7 +34,7 @@ html {
   height: 30px;
   background-color: bisque;
   margin-top: 20px;
-  margin-left: 11%;
+  margin-left: 110px;
   font-size: 15px;
   color: bisque;
   border-style: solid;
@@ -168,6 +168,21 @@ body {
 }
 
 @media screen and (max-width: 675px) {
+  /* #sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: none;
+    animation: none;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: lightsalmon;
+    overflow-x: visible;
+  } */
+  
   #sidenav {
     animation: none;
     z-index: 1;
@@ -178,9 +193,30 @@ body {
     position: sticky;
     height: auto;
     width: 100%;
-
+    height: 800px;
     margin: 0 auto;
   }
+  #landing {
+    display: block;
+    position: relative;
+    top: 45%;
+    left: 27%;
+    font-size: 60px;
+    margin: 0 auto;
+    color: bisque;
+  }
+  /* .shape {
+    width: 30px;
+    height: 30px;
+    background-color: bisque;
+    margin-top: 20px;
+    margin-left: 110px;
+    font-size: 15px;
+    color: bisque;
+    border-style: solid;
+    border-radius: 100px;
+    padding: 1%;
+  } */
 
   /* Hide the links inside the navigation menu (except for logo/home) */
   #sidenav #mobileLinks {
