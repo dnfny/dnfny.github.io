@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 #sidenav {
   height: 100%;
   width: 100%;
@@ -17,7 +18,7 @@ html {
   z-index: 0;
   top: 0;
   left: 0;
-  background-color: lightsalmon;
+  background-color: salmon;
   overflow-x: visible;
 }
 #landing {
@@ -187,9 +188,10 @@ body {
     animation: none;
     z-index: 1;
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     overflow-y: visible;
-    background-color: lightsalmon;
+    background-color:salmon;
     position: sticky;
     height: auto;
     width: 100%;
@@ -225,6 +227,9 @@ body {
 
     grid-template-columns: 1fr;
   }
+  h2{
+    padding-top: 400px;
+  }
 
   /* Style navigation menu links */
   #sidenav a {
@@ -238,7 +243,7 @@ body {
 
   /* Style the hamburger menu */
   #sidenav a.icon {
-    background: white;
+    background:lightsalmon;
     display: block;
     position: absolute;
     right: 0;
