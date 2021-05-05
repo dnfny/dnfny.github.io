@@ -21,7 +21,7 @@ html {
   background-color: salmon;
   overflow-x: visible;
 }
-#landing{
+#landing {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -92,8 +92,13 @@ html {
 }
 #sidenav #mobileLinks {
   display: visible;
-  animation: fadein;
   grid-template-columns: 1fr;
+}
+#socialLinks {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: rgb(255, 228, 196);
 }
 body {
   background-color: linen;
@@ -108,7 +113,8 @@ body {
   align-content: center;
   color: salmon;
   text-shadow: bisque 1px 2px;
-}.collapsible {
+}
+.collapsible {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -126,7 +132,7 @@ body {
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.collapsiblecontent {
+.collapsibleContent {
   padding: 0 18px;
   display: none;
   overflow: hidden;
@@ -221,7 +227,7 @@ body {
     background-color: lightsalmon;
     overflow-x: visible;
   } */
-  
+
   #sidenav {
     animation: none;
     z-index: -1;
@@ -229,7 +235,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     overflow-y: visible;
-    background-color:salmon;
+    background-color: salmon;
     position: sticky;
     width: 100%;
     margin: 0 auto;
@@ -241,22 +247,19 @@ body {
     z-index: 1;
     font-size: 60px;
     color: bisque;
-
   }
   #landingcontent {
-    display:inline;
+    display: inline;
     margin-right: 200px;
-   position:relative;
-   top: 40%;
-   left:25%;
+    position: relative;
+    top: 40%;
+    left: 25%;
     font-size: 60px;
     color: bisque;
   }
-.shape:hover{
-    
+  .shape:hover {
     color: lightsalmon;
-    
-  } 
+  }
   .shape i {
     color: lightsalmon;
     font-size: 20px;
@@ -269,7 +272,7 @@ body {
     vertical-align: bottom;
     grid-template-columns: 1fr;
   }
-  h2{
+  h2 {
     padding-top: 100px;
   }
 
@@ -279,12 +282,11 @@ body {
     text-decoration: none;
     font-size: 30px;
     border-style: none;
-   
   }
 
   /* Style the hamburger menu */
   #sidenav a.icon {
-    background:lightsalmon;
+    background: lightsalmon;
     display: block;
     position: absolute;
     margin-right: 5px;
@@ -296,7 +298,6 @@ body {
   #sidenav a:hover {
     color: white;
   }
-
 
   #sidenav a.active {
     color: white;
