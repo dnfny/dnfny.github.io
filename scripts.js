@@ -32,25 +32,15 @@ function animate({duration, draw, timing}) {
     if(intViewportWidth >= 675)  {
       var x = document.getElementById("landing");
         x.style.display = "none";
-    
       var y = document.getElementById("sidenav");
-        y.style.width = "180px";
-
-
-      var z = document.getElementById("links");
-        z.style.display = "block";
+        y.style.zIndex = "1";
       console.log("made it mama")
     }
     else{
       var x = document.getElementById("landing");
         x.style.display = "none";
-    
-      var y = document.getElementById("sidenav");
-        y.style.width = "100%";
-        y.style.height = "100%";
-
-      var z = document.getElementById("links");
-        z.style.display = "block";
+        var y = document.getElementById("sidenav");
+        y.style.zIndex = "1";
       console.log("made it mama")
     }
   }

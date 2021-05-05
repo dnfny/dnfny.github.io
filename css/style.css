@@ -9,6 +9,20 @@ html {
 
 #sidenav {
   height: 100%;
+  width: 180px;
+  position: fixed;
+  transition: none;
+  animation: none;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: salmon;
+  overflow-x: visible;
+}
+#landing{
+  height: 100%;
   width: 100%;
   position: fixed;
   transition: none;
@@ -21,7 +35,7 @@ html {
   background-color: salmon;
   overflow-x: visible;
 }
-#landing {
+#landingcontent {
   display: block;
   position: relative;
   top: 45%;
@@ -56,12 +70,12 @@ html {
 }
 
 #links {
-  display: none;
+  display: block;
   position: relative;
   top: 40%;
 }
 #links a {
-  padding: 6px 8px 6px 16px;
+  padding: 10px 8px 6px 8px;
   text-decoration: none;
   font-size: 25px;
   color: bisque;
@@ -87,6 +101,7 @@ body {
 .content {
   margin: 0 auto;
   margin-left: 200px; /* Same as the width of the sidenav */
+  margin-right: 10px;
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
   max-width: 800px;
@@ -186,49 +201,53 @@ body {
   
   #sidenav {
     animation: none;
-    z-index: 1;
+    z-index: -1;
     margin-top: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     overflow-y: visible;
     background-color:salmon;
     position: sticky;
-    height: auto;
     width: 100%;
-    height: 800px;
     margin: 0 auto;
   }
   #landing {
     display: block;
-    position: relative;
-    top: 45%;
-    left: 27%;
+    width: 100%;
+    height: 800px;
+    z-index: 1;
     font-size: 60px;
-    margin: 0 auto;
+    color: bisque;
+
+  }
+  #landingcontent {
+    display:inline;
+    margin-right: 200px;
+   position:relative;
+   top: 40%;
+   left:25%;
+    font-size: 60px;
     color: bisque;
   }
-  /* .shape {
-    width: 30px;
-    height: 30px;
-    background-color: bisque;
-    margin-top: 20px;
-    margin-left: 110px;
-    font-size: 15px;
-    color: bisque;
-    border-style: solid;
-    border-radius: 100px;
-    padding: 1%;
-  } */
+.shape:hover{
+    
+    color: lightsalmon;
+    
+  } 
+  .shape i {
+    color: lightsalmon;
+    font-size: 20px;
+  }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
   #sidenav #mobileLinks {
     display: none;
     animation: none;
-
+    vertical-align: bottom;
     grid-template-columns: 1fr;
   }
   h2{
-    padding-top: 400px;
+    padding-top: 100px;
   }
 
   /* Style navigation menu links */
@@ -237,8 +256,7 @@ body {
     text-decoration: none;
     font-size: 30px;
     border-style: none;
-
-    padding-bottom: 5px;
+   
   }
 
   /* Style the hamburger menu */
@@ -246,12 +264,16 @@ body {
     background:lightsalmon;
     display: block;
     position: absolute;
+    margin-right: 5px;
     right: 0;
     top: 0;
+    margin-bottom: 200px;
+    animation: none;
   }
   #sidenav a:hover {
     color: white;
   }
+
 
   #sidenav a.active {
     color: white;
@@ -259,6 +281,8 @@ body {
   .content {
     margin: 0 auto;
     margin-top: 20px;
-    max-width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 600px;
   }
 }
