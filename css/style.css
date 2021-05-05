@@ -214,21 +214,6 @@ body {
 }
 
 @media screen and (max-width: 675px) {
-  /* #sidenav {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    transition: none;
-    animation: none;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    background-color: lightsalmon;
-    overflow-x: visible;
-  } */
-
   #sidenav {
     animation: none;
     z-index: -1;

@@ -28,22 +28,12 @@ function animate({duration, draw, timing}) {
   }
 
   function landingGo() {
-    let intViewportWidth = window.innerWidth;
-    console.log(intViewportWidth);
-    if(intViewportWidth >= 675)  {
+    
       var x = document.getElementById("landing");
         x.style.display = "none";
       var y = document.getElementById("sidenav");
         y.style.zIndex = "1";
       console.log("made it mama")
-    }
-    else{
-      var x = document.getElementById("landing");
-        x.style.display = "none";
-        var y = document.getElementById("sidenav");
-        y.style.zIndex = "1";
-      console.log("made it mama")
-    }
   }
 
 function collapsibleAction(){
