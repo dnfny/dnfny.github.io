@@ -145,6 +145,7 @@ body {
   text-decoration: none;
   letter-spacing: normal;
   padding-left: 20px;
+  text-shadow: 2px 1px lightsalmon;
 }
 #sidenav a.icon {
   display: none;
@@ -308,5 +309,8 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     max-width: 600px;
+  }
+  #socialLinks {
+    position: relative;
   }
 }
