@@ -17,6 +17,7 @@ function animate({duration, draw, timing}) {
     });
   }
 
+
   function myFunction() {
     var x = document.getElementById("mobileLinks");
     if (x.style.display === "grid") {
@@ -44,7 +45,23 @@ function animate({duration, draw, timing}) {
       console.log("made it mama")
     }
   }
-  
+
+function collapsibleAction(){
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+}
 
 function scrollDown(){
 // Get the container element
