@@ -32,7 +32,7 @@ function animate({duration, draw, timing}) {
       var x = document.getElementById("landing");
         x.style.display = "none";
       var y = document.getElementById("sidenav");
-        y.style.zIndex = "1";
+        y.style.zIndex = "0";
       console.log("made it mama")
   }
 
