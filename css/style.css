@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:ital,wght@0,400;1,400;1,600&display=swap');
+
 * {
   padding: 0;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -18,7 +20,7 @@ html {
   z-index: -1;
   top: 0;
   left: 0;
-  background-color: salmon;
+  background-color: lightsalmon;
   overflow-x: visible;
 }
 #landing {
@@ -72,7 +74,7 @@ html {
 #links {
   display: block;
   position: relative;
-  top: 40%;
+  top: 3%;
 }
 #links a {
   padding: 10px 8px 6px 8px;
@@ -99,6 +101,12 @@ html {
   bottom: 0;
   left: 0;
   color: rgb(255, 228, 196);
+}
+h1, h2{
+  font-family: 'Fredoka One', cursive;
+}
+p{
+  font-size: 20px;
 }
 body {
   background-color: linen;
