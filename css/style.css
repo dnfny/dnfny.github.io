@@ -8,268 +8,124 @@
 html {
   scroll-behavior: smooth;
 }
-
-#sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  background-color: lightsalmon;
-  overflow-x: visible;
+h1 {
+  color: darkseagreen;
+  font-family: fredoka one, sans-serif;
+  font-size: 75px;
+  text-shadow: lightslategray 1px 1px;
+}
+h2 {
+  color: darkseagreen;
+  font-family: fredoka one, sans-serif;
+  font-size: 50px;
+  text-shadow: lightslategray 1px 1px;
+  text-align: center;
 }
 
-#landing {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: salmon;
-  overflow-x: visible;
+.landingContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 500px 500px;
 }
-#landingContent {
-  display: inline;
-  position: relative;
-  top: 45%;
-  left: 30%;
-  margin: 0 auto;
-  color: linen;
+.lBox1 {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+  margin-top: 150px;
 }
-#landingContent h2 {
-  font-size: 100px;
-  color: linen;
-  text-shadow: lightsalmon 4px 3px;
-  margin-bottom: 20px;
+.lBox2 {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+  vertical-align: center;
+  color: darkseagreen;
 }
-.shape {
-  margin-left: 180px;
-  width: 100px;
-  height: 100px;
-  background-color: linen;
-  font-size: 30px;
-  color: bisque;
-  border-style: solid;
-  border-radius: 100px;
-  padding: 2%;
+.lBox2 a {
+  font-size: 150px;
 }
-.shape i {
-  color: lightsalmon;
-}
-.shape:hover {
-  color: lightsalmon;
-}
-
-#links {
-  display: block;
-  position: relative;
-  top: 2%;
-}
-#links a {
-  padding: 10px 8px 6px 8px;
+a {
+  color: darkseagreen;
   text-decoration: none;
   font-size: 25px;
-  color: bisque;
 }
-#links a:hover {
-  animation: spread 1s;
+a:hover {
+  color: lightsalmon;
 }
-
-#sidenav a:hover {
-  color: #f1f1f1;
-}
-#sidenav a.active {
-  color: #f1f1f1;
-}
-#sidenav #mobileLinks {
-  display: grid;
-  grid-template-columns: 1fr;
-  font-family: "Fredoka One", cursive;
-}
-#socialLinks {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-h1,
-h2 {
-  font-family: "Fredoka One", cursive;
-}
-p {
-  font-size: 20px;
-}
-body {
-  background-color: linen;
-}
-.content {
-  margin: 0 auto;
-  font-size: 28px; 
-  padding-left: 210px;
-  max-width: 1100px;
-  align-content: center;
-  color: salmon;
-  text-shadow: bisque 1px 2px;
-}
-.collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
+#nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  z-index: 1;
+  background-color: darkseagreen;
 }
-.footer {
-  display: none;
+#nav a {
+  color: white;
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.collapsible:hover {
-  background-color: #ccc;
+#nav a:hover {
+  text-shadow: lightsalmon 1px 1px;
 }
-
-/* Style the collapsible content. Note: hidden by default */
-.collapsibleContent {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+#links {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  padding-left: 20px;
 }
-
-#sidenav a.icon {
-  display: none;
+.spacer1 {
+  height: 300px;
+}
+.spacer {
+  height: 150px;
 }
 
-@keyframes shrink {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 180px;
-  }
+.bodyContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 600px 100px 800px 100px 700px 100px 600px 100px 600px;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 100%;
-  }
+.bBox1 {
+  grid-column: 2;
+  grid-row: 1;
 }
-
-@keyframes bounce {
-  from {
-    letter-spacing: normal;
-  }
-
-  50% {
-    letter-spacing: 50px;
-  }
-
-  to {
-    letter-spacing: normal;
-  }
+.bBox2 {
+  grid-column: 2;
+  grid-row: 3;
 }
-@keyframes spread {
-  from {
-    letter-spacing: normal;
-  }
-  50% {
-    letter-spacing: 2px;
-  }
-  to {
-    letter-spacing: normal;
-  }
+.bBox3 {
+  grid-column: 2;
+  grid-row: 5;
 }
-
-@media screen and (max-width: 675px) {
-  #sidenav {
-    animation: none;
-    z-index: -1;
-    margin-top: 0;
-    padding-top: 10px;
-    overflow-y: visible;
-    background-color: lightsalmon;
-    position: sticky;
-    width: 100%;
-    margin: 0 auto;
-    font-family: "Fredoka One", cursive;
-  }
-
-  #landing {
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    color: bisque;
-  }
-  #landingContent {
-    color: bisque;
-  }
-  #landingContent h2 {
-    font-size: 40px;
-    text-shadow: lightsalmon 2px 3px;
-  }
-  .shape {
-    margin-left: 70px;
-  }
-  .shape:hover {
-    color: lightsalmon;
-  }
-  .shape i {
-    color: lightsalmon;
-    font-size: 20px;
-  }
-
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  #sidenav #mobileLinks {
-    display: none;
-    animation: none;
-    vertical-align: bottom;
-    grid-template-columns: 1fr;
-  }
-
-  /* Style navigation menu links */
-  #sidenav a {
-    animation: none;
-    text-decoration: none;
-    font-size: 30px;
-    margin-top: -20px;
-  }
-
-  /* Style the hamburger menu */
-  #sidenav a.icon {
-    background: lightsalmon;
-    display: block;
-    position: absolute;
-    margin-right: 5px;
-    right: 0;
-    top: 0;
-    animation: none;
-  }
-  #sidenav a:hover {
-    color: white;
-  }
-
-  #sidenav a.active {
-    color: white;
-  }
-
-  #socialLinks {
-    position: fixed;
-    bottom: 0;
-    background-color: lightsalmon;
-    width: 100%;
-  }
-  .content {
-    padding-left: 10px;
-  }
-  footer {
-    display: inline;
-  }
+.bBox4 {
+  grid-column: 2;
+  grid-row: 7;
+}
+.bBox5 {
+  grid-column: 2;
+  grid-row: 9;
+}
+.arrow {
+  align-content: center;
+  text-align: center;
+}
+.arrow a {
+  font-size: 80px;
+}
+.link1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.link2 {
+  grid-column: 2;
+  grid-row: 4;
+}
+.link3 {
+  grid-column: 2;
+  grid-row: 6;
+}
+.link4 {
+  grid-column: 2;
+  grid-row: 8;
+}
+.link5 {
+  grid-column: 2;
+  grid-row: 10;
 }
