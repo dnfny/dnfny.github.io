@@ -33,7 +33,7 @@ function animate({duration, draw, timing}) {
         x.style.display = "none";
       var y = document.getElementById("sidenav");
         y.style.zIndex = "0";
-      console.log("made it mama")
+      console.log("made it mama");
   }
 
 function collapsibleAction(){
@@ -86,3 +86,8 @@ function scrollUp(){
       });
     } 
   }
+function headline(){
+  const headline = new CircleType(document.getElementById('responsive_headline'));
+  headline.radius(200).dir(-1);
+  console.log("is this thing on");
+} 
